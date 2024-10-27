@@ -1,0 +1,95 @@
+/* Очистка базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основное окно слайдера на всю ширину */
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Элемент слайдера */
+.slider .slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Текущий активный слайд */
+.slider .slider-item-action {
+    z-index: 1;
+}
+
+/* Стиль кнопок управления */
+.slider-btn {
+    position: absolute;
+    color: grey;
+    z-index: 2;
+    font-size: 48px;
+    top: calc(50% - 24px);
+    transition: 0.3s;
+}
+
+/* Стиль кнопок управления при наведении */
+.slider-btn:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* Левая кнопка */
+#slider-btn-prev {
+    left: 10px;
+}
+
+/* Правая кнопка */
+#slider-btn-next {
+    right: 10px;
+}
+
+/* Контейнер для позиционирования строки состояния */
+.bar-container {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Строка состояния */
+.bar {
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(44, 43, 43, 0.55);
+}
+
+/* Элемент строки состояния */
+.bar-item {
+    color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Наведение на строку состояния */
+.bar-item:hover {
+    color: orange;
+}
+
+/* Оступы для точек в строке состояний (кроме первого элемента) */
+.bar-item:not(:first-child) {
+    margin-left: 6px;
+}
+
+/* Активный элемент строки сосотояния */
+.bar-item-active {
+     color: white;
+}

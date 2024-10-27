@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Слайдер на jquery</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>123</h1>
+    <div id="slider" class="slider">
+        <i id="slider-btn-prev" class="slider-btn fa-solid fa-arrow-left"></i>
+        <img class="slider-item slider-item-action" data-src="https://avatars.mds.yandex.net/i?id=4f7586d49edaa427e07a8819562fc284_l-5248434-images-thumbs&n=13" alt="">
+        <img class="slider-item" data-src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="">
+        <img class="slider-item" data-src="https://get.wallhere.com/photo/2048x1280-px-animals-baby-cat-cats-cute-fat-fluffy-grass-grey-kitten-kittens-1913313.jpg" alt="">
+        <img class="slider-item" data-src="https://i.pinimg.com/originals/65/ed/fd/65edfdb2f3aea4de0f62072678ebb232.jpg" alt="">
+        <i id="slider-btn-next" class="slider-btn fa-solid fa-arrow-right"></i>
+        <div class="bar-container">
+            <div id="bar" class="bar"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
